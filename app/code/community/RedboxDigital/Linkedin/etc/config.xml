@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Configuration file
+ *
+ * @category    Mage
+ * @package     RedboxDigital_Linkedin
+ * @author      RedboxDigital
+ */
+-->
+<config>
+    <modules>
+        <RedboxDigital_Linkedin>
+            <version>1.0.0</version>
+        </RedboxDigital_Linkedin>
+    </modules>
+    
+    <global>
+        <helpers>
+            <redboxdigital_linkedin>
+                <class>RedboxDigital_Linkedin_Helper</class>
+            </redboxdigital_linkedin>  
+        </helpers>
+        <models>
+            <redboxdigital_linkedin>
+                <class>RedboxDigital_Linkedin_Model</class>
+            </redboxdigital_linkedin>
+        </models>
+        <resources>
+            <redboxdigital_linkedin_setup>
+                <setup>
+                    <module>RedboxDigital_Linkedin</module>
+                    <class>Mage_Customer_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </redboxdigital_linkedin_setup>
+            <redboxdigital_linkedin_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </redboxdigital_linkedin_write>
+            <redboxdigital_linkedin_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </redboxdigital_linkedin_read>
+        </resources>
+    </global>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <redboxdigital_linkedin>
+                        <file>redboxdigital_linkedin.xml</file>
+                </redboxdigital_linkedin>
+            </updates>
+        </layout>
+    </frontend>
+</config>

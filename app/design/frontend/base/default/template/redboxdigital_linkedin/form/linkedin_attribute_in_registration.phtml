@@ -1,0 +1,38 @@
+<?php
+/**
+ * Linkedin Attribute frontend layout file
+ *
+ * @category    design
+ * @package     default_default
+ * @author      RedboxDigital
+ */
+?>
+<?php
+/**
+ * Create account form template
+ *
+ * @see app/design/frontend/default/default/template/redboxdigital_linkedin/form/register.phtml
+ */
+/** @var $this Mage_Customer_Block_Form_Register */
+?>
+
+<!-- Linkedin attribute starts here -->
+<?php 
+$attributeInfo = Mage::getResourceModel('eav/entity_attribute_collection')
+                ->setCodeFilter('linkedin_profile')
+                ->getFirstItem();
+?>
+<?php if($attributeInfo): ?>
+    <?php $isRequired = Mage::getStoreConfig('customer/redboxdigital_linkedin/required');?>
+    <li class="fields">
+        <div class="field">
+            <label for="<?php echo $attributeInfo->getAttributeCode(); ?>" <?php if($isRequired):?>class="required"><em>*</em> <?php  else :?>><?php endif;?><?php echo $this->__($attributeInfo->getFrontendLabel()); ?></label>
+            <div class="input-box">
+                <?php if($attributeInfo->getFrontendInput()== 'text'):?>
+                <input type="text" name="<?php echo $attributeInfo->getAttributeCode(); ?>" id="<?php echo $attributeInfo->getAttributeCode(); ?>" title="<?php echo $this->__($attributeInfo->getFrontendLabel()); ?>" class="<?php if($isRequired): ?>required-entry<?php endif; ?> input-text <?php echo $attributeInfo->getfrontendClass(); ?>" />
+                <?php endif;?>
+            </div>
+        </div>
+    </li>
+<?php endif ?>
+<!-- Linkedin attribute ends here -->

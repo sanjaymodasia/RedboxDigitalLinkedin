@@ -1,0 +1,36 @@
+{
+  "name": "redboxdigital/linkedin",
+  "type": "magento-module",
+  "license": "OSL-3.0",
+  "homepage": "https://github.com/sanjaymodasia/RedboxDigitalLinkedin",
+  "description": "Clean integration of customer's new attribute called Linkedin attribute to manage linkedin profile URL",
+  "authors": [
+    {
+      "name": "Redbox Digital",
+      "email": "sales@redboxdigital.com"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "extra": {
+    "map": [
+      [
+        "app/code/community/RedboxDigital/Linkedin/",
+        "app/code/community/RedboxDigital/Linkedin/"
+      ],
+      [
+        "app/etc/modules/RedboxDigital_Linkedin.xml",
+        "app/etc/modules/RedboxDigital_Linkedin.xml"
+      ],
+      [
+        "app/design/frontend/base/default/layout/redboxdigital_linkedin.xml",
+        "app/design/frontend/base/default/layout/redboxdigital_linkedin.xml"
+      ],
+      [
+        "app/design/frontend/base/default/template/redboxdigital_linkedin/form",
+        "app/design/frontend/base/default/template/redboxdigital_linkedin/form"
+      ]
+    ]
+  }
+}

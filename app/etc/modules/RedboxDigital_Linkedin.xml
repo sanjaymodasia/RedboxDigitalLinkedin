@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    RedboxDigital
+ * @package     RedboxDigital_Linkedin
+ * @author      RedboxDigital
+ */
+-->
+<config>
+    <modules>
+        <RedboxDigital_Linkedin>
+            <active>true</active>
+            <codePool>community</codePool>
+        </RedboxDigital_Linkedin>
+    </modules>
+</config>
