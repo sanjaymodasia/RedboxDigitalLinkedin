@@ -12,7 +12,7 @@
 
     <customer_account_edit translate="label">
         <block name="customer_edit">
-            <action method="setTemplate"><template>redboxdigital_linkedin/form/edit.phtml</template></action>
+            <action method="setTemplate"><template>redboxdigital/linkedin/form/edit.phtml</template></action>
         </block>
     </customer_account_edit>
     
@@ -20,7 +20,7 @@
         <reference name="customer_form_register">
             <block type="core/text_list" name="form.additional.info">
                 <block type="core/template" name="linkedin_attribute_in_registration">
-                    <action method="setTemplate"><template>redboxdigital_linkedin/form/linkedin_attribute_in_registration.phtml</template></action>
+                    <action method="setTemplate"><template>redboxdigital/linkedin/form/linkedin-attribute.phtml</template></action>
                 </block>
             </block>
         </reference>
