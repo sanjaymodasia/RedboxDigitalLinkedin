@@ -34,7 +34,7 @@ Un-Installing
 
 By Manually:
     Open file from app/etc/modules/RedboxDigital_Linkedin.xml and make the changes like below
-    <pre>
+    
     <config>
         <modules>
             <RedboxDigital_Linkedin>
@@ -43,7 +43,7 @@ By Manually:
             </RedboxDigital_Linkedin>
         </modules>
     </config>
-    </pre>
+    
 By Composer:
     
     Remove following to sections from your composer file:
@@ -65,7 +65,7 @@ By Composer:
 Removing customer custom attribute and module setup from core_resource table
     
     if you want to uninstall module completely from your store then use below code to clear linkedin_profile attribute and module setup from core_resource table
-    <pre>
+    
     <?php
     error_reporting(E_ALL | E_STRICT);
     $mageFilename = 'app/Mage.php';
@@ -97,14 +97,12 @@ Removing customer custom attribute and module setup from core_resource table
     }
 
     ?>
-    </pre>
     
 Making module work in any other custom theme:
     After installing this moduel if you found module is not working the please check edit.phtml file by enabling "Template Path Hints" through admin => system => configuration => Developer ( under advance tab from left side ) =>select Current Configuration Scope:(current store) => Debug => Template Path Hints => yes and check the path 
     
     if edit.phtml comes from any of your custom theme then go to that phtml file and below code
-    <pre>
-    <!-- Linkedin attribute starts here -->
+    
     <?php 
     $attributeInfo = Mage::getResourceModel('eav/entity_attribute_collection')
                     ->setCodeFilter('linkedin_profile')
@@ -128,5 +126,4 @@ Making module work in any other custom theme:
             </ul>
         </div>
     <?php endif; ?>
-    <!-- Linkedin attribute ends here -->
-    </pre>
+    
