@@ -100,15 +100,6 @@ Removing customer custom attribute and module setup from core_resource table
         $this->_fault('data_invalid', $e->getMessage());
     }
 
-    $sql = "DELETE FROM 'core_resource' WHERE 'code' = 'redboxdigital_linkedin_setup';";
-    $connection = Mage::getSingleton('core/resource')->getConnection('core_write');
-
-    try {
-        $connection->query($sql);
-    } catch (Exception $e) {
-        echo $e->getMessage();
-    }
-
     ?>
 ```
     
