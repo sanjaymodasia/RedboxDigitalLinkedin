@@ -1,8 +1,11 @@
 Redbox Digital
+--------------
 
 Installing
+----------
 
 By GIT:
+-------
 
 * clone this repo
 * disable compilation if you use that.
