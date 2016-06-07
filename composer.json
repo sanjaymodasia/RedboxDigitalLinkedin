@@ -28,9 +28,13 @@
         "app/design/frontend/base/default/layout/redboxdigital_linkedin.xml"
       ],
       [
-        "app/design/frontend/base/default/template/redboxdigital/",
-        "app/design/frontend/base/default/template/redboxdigital/"
+        "app/design/frontend/base/default/template/redboxdigital/linkedin/form/edit.phtml",
+        "app/design/frontend/base/default/template/redboxdigital/linkedin/form/edit.phtml"
+      ],
+      [
+        "app/design/frontend/base/default/template/redboxdigital/linkedin/form/linkedin-attribute.phtml",
+        "app/design/frontend/base/default/template/redboxdigital/linkedin/form/linkedin-attribute.phtml"
       ]
-    ]
+    ],
   }
 }
