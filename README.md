@@ -109,7 +109,11 @@ Removing customer custom attribute and module setup from core_resource table
 Making module work in any other custom theme:
 ---------------------------------------------
 
-* After installing this moduel if you found module is not working the please check edit.phtml file by enabling "Template Path Hints" through admin => system => configuration => Developer ( under advance tab from left side ) =>select Current Configuration Scope:(current store) => Debug => Template Path Hints => yes and check the path 
+After installing this moduel if you found module is not working
+---------------------------------------------------------------
+
+* check edit.phtml file by enabling "Template Path Hints" through admin => system => configuration => Developer ( under advance tab from left side ) =>select Current Configuration Scope:(current store) => Debug => Template Path Hints => yes and check the path 
+* Allow Symlinks to yes by admin => system => configuration => Developer ( under advance tab from left side ) => template settings => Allow Symlinks => yes
     
 * if edit.phtml comes from any of your custom theme then go to that phtml file and below code
 
